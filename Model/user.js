@@ -22,6 +22,10 @@ const userSchema = new mongoose.Schema({
         type:String,
         enum:["user","admin"],
         default:"user"
+    },
+    isPlaced:{
+        type:Boolean,
+        default:false
     }
     
 }, {timestamps:true})

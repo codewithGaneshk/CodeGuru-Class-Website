@@ -32,5 +32,5 @@ const batchSchema = new mongoose.Schema({
       required:true
     }
 
-})
+},{timestamps:true})
 module.exports = mongoose.model("codeguruBatches",batchSchema)

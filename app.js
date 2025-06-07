@@ -7,6 +7,8 @@ const userRoute = require("./Routes/userRoute")
 const courseRoute = require("./Routes/courseseRoute")
 const feedbackRoute = require("./Routes/feedbackRoutes")
 const batchRoute = require("./Routes/batchroute")
+const questionbankRoute = require("./Routes/questionbankRoute")
+const jobsRoute = require("./Routes/jobRoutes")
 const app = express()
 
 
@@ -20,6 +22,8 @@ app.use("/api/user",userRoute)
 app.use("/api/course",courseRoute)
 app.use("/api/feedback",feedbackRoute)
 app.use("/api/batch",batchRoute)
+app.use("/api/questionbank",questionbankRoute)
+app.use("/api/jobs",jobsRoute)
 
 app.listen(process.env.PORT)
 

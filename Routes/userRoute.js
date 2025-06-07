@@ -1,7 +1,8 @@
 const route = require("express").Router()
-const {getUser,postUser,putUser,deleteUser, login} = require('../Controller/userController');
+const {getAllUser,getUser,postUser,putUser,deleteUser, login} = require('../Controller/userController');
 
-route.get('/',getUser)
+route.get('/',getAllUser)
+route.get("/:id",getUser)
 route.post('/',postUser)
 route.post("/login",login)
 route.put('/:id',putUser)
