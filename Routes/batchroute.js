@@ -5,8 +5,8 @@ const route = require("express").Router()
 
 route.get("/",getAllBatch),
 route.get("/:id",getBatch)
-route.post("/",[isAdmin,auth],postBatch)
-route.put("/:id",[isAdmin,auth],putBatch)
-route.delete("/:id",[isAdmin,auth],deleteBatch)
+route.post("/",postBatch)
+route.put("/:id",putBatch)
+route.delete("/:id",deleteBatch)
 
 module.exports = route

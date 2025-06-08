@@ -5,9 +5,9 @@ const auth = require("../middlewair/auth");
 
 route.get('/',getAllCourse)
 route.get('/:id',getCourse)
-route.post('/',[isAdmin,auth],postCourse)
-route.put('/:id',[isAdmin,auth],putCourse)
-route.delete('/:id',[isAdmin,auth],deleteCourse)
+route.post('/',postCourse)
+route.put('/:id',putCourse)
+route.delete('/:id',deleteCourse)
 
 module.exports = route
 

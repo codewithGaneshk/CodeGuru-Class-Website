@@ -18,6 +18,10 @@ const jobsSchema = new mongoose.Schema({
         type:String,
         required:true
     },
+    companyNumber:{
+        type:Number,
+        required:true
+    },
     companyAddress:{
         type:String,
         required:true
@@ -30,9 +34,6 @@ const jobsSchema = new mongoose.Schema({
         type:String,
     },
     description:{
-        type:String
-    },
-    photo:{
         type:String
     }
 },{timestamps:true})
