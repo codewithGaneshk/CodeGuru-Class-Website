@@ -22,6 +22,9 @@ const jobsSchema = new mongoose.Schema({
         type:Number,
         required:true
     },
+    photo:{
+        type:String,
+    },
     companyAddress:{
         type:String,
         required:true
