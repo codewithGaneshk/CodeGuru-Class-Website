@@ -38,6 +38,9 @@ const jobsSchema = new mongoose.Schema({
     },
     description:{
         type:String
+    },
+    jobType:{
+        type:String
     }
 },{timestamps:true})
 
