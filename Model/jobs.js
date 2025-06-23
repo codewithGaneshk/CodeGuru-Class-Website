@@ -9,6 +9,10 @@ const jobsSchema = new mongoose.Schema({
         type:String,
         required:true
     },
+    language:{
+        type:String,
+        required:true
+    },
     userName:{
         type:mongoose.Schema.ObjectId,
         ref:"codeguruuser",
